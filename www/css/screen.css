@@ -81,4 +81,16 @@ button {
     display: block;
     letter-spacing: 1px;
     margin: auto;
+    padding: 0.375em 1em 0.375em 1em;
+    background: none repeat scroll 0% 0% #d0d0d0;
+    border: medium none;
+    border-radius: 1em;
+}
+
+button:hover {
+    background-color: #c0c0c0;
+}
+
+button:active {
+    background-color: #a0a0a0;
 }
