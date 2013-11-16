@@ -1,5 +1,6 @@
 body, input {
     font-family: "Lucida Console", Monaco, monospace;
+    color: black;
 }
 
 section#code {
@@ -10,8 +11,12 @@ section#code {
 h1 {
     font-size: 32pt;
     text-align: center;
-    color: black;
     padding-top: 0.5em;
+}
+
+a {
+    text-decoration: none;
+    color: #a0a0a0;
 }
 
 div#qrcode img {

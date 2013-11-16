@@ -22,6 +22,8 @@ footer {
     left: 0;
     bottom: 0;
     width: 100%;
+    text-align: center;
+    padding-bottom: 0.5em;
 }
 
 form#wifi {
