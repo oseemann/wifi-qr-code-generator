@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>Wifi QR Code Generator</title>
+<link rel="stylesheet" href="css/common.css" media="screen, print">
+<link rel="stylesheet" href="css/screen.css" media="screen">
+<link rel="stylesheet" href="css/print.css" media="print">
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="js/qrcode.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+    $('form#wifi').submit(function(ev) {
+        ev.preventDefault();
+
+        $('#qrcode').empty();
+
+        var ssid = $('#ssid').attr('value');
+        var password = $('#password').attr('value');
+        var qrstr = 'WIFI:S:' + ssid + ';T:WPA;P:' + password + ';;';
+
+        var target = document.getElementById("qrcode");
+        new QRCode(target, qrstr);
+
+        $('section#code').delay(50).slideDown();
+    });
+
+    $('#printnow').click(function(ev) {
+        window.print();
+    });
+});
+</script>
+</head>
+
+<body>
+
+<header class="screen">
+<h1>Wifi QR Code Generator</h1>
+</header>
+
+<header class="print">
+<h1>WIFI</h1>
+</header>
+
+<section id="form">
+<form id="wifi">
+
+<fieldset>
+    <ol>
+    <li>
+        <label for="ssid">SSID</label>
+        <input type="text" name="ssid" id="ssid" autofocus required
+            placeholder="Enter Wifi name" />
+    </li>
+    <li>
+        <label for="ssid">Password</label>
+        <input type="text" name="password" id="password" required
+            placeholder="Enter Wifi password"/>
+    </li>
+    </ol>
+</fieldset>
+
+<fieldset>
+    <button id="generate">Generate QR Code</button>
+</fieldset>
+
+</form>
+
+</section>
+
+<section id="code">
+<div id="qrcode"></div>
+<div><button id="printnow">Print</button></div>
+</section>
+
+<footer>
+</footer>
+
+</body>
+</html>

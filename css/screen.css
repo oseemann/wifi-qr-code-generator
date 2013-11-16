@@ -1,0 +1,84 @@
+header,section,footer{
+    display: block;
+    margin: auto;
+}
+
+header.print {
+    display: None;
+}
+
+section {
+    width: 40em;
+}
+
+section#code {
+    margin: 0 auto;
+    display: None;
+    width: 40em;
+}
+
+footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+form#wifi {
+    border-radius: 5px;
+    width: 100%;
+}
+
+form#wifi fieldset {
+    border: none;
+    margin-bottom: 10px;
+}
+
+form#wifi fieldset:last-of-type {
+    margin-bottom: 0;
+}
+
+form#wifi ol li {
+    line-height: 2em;
+    list-style: none;
+    padding: 0.125em;
+    margin: 0.125em;
+}
+
+form#wifi ol ol li {
+    background: none;
+    border: none;
+    float: left;
+}
+
+form#wifi label {
+    float: left;
+    font-size: 1.5em;
+    width: 20%;
+    text-align: right;
+}
+
+form#wifi input {
+    width: 15em;
+    font-size: 1.5em;
+    height: 1.5em;
+    margin: 0 0 0 1em;
+}
+
+form#wifi label:after {
+    content: ":";
+}
+
+form#wifi fieldset fieldset label {
+    background:none no-repeat left 50%;
+    line-height: 20px;
+    padding: 0 0 0 30px;
+    width: auto;
+}
+
+button {
+    font-size: 1.5em;
+    display: block;
+    letter-spacing: 1px;
+    margin: auto;
+}

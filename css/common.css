@@ -1,0 +1,20 @@
+body, input {
+    font-family: "Lucida Console", Monaco, monospace;
+}
+
+section#code {
+    padding-top: 2em;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 32pt;
+    text-align: center;
+    color: black;
+    padding-top: 0.5em;
+}
+
+div#qrcode img {
+    padding: 2em;
+    margin: auto;
+}

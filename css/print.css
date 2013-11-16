@@ -1,0 +1,23 @@
+header.screen {
+    display: none;
+}
+
+header.print {
+    display: block;
+}
+
+footer{
+    display: none;
+}
+
+section#form {
+    display: none;
+}
+
+section#code {
+    margin: 0 auto;
+}
+
+button {
+    display: None;
+}
