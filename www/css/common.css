@@ -1,6 +1,7 @@
 body, input {
     font-family: "Lucida Console", Monaco, monospace;
     color: black;
+    margin-bottom: 4em;
 }
 
 section#code {
