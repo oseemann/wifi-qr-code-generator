@@ -15,8 +15,8 @@ $(document).ready(function() {
 
         $('#qrcode').empty();
 
-        var ssid = $('#ssid').attr('value');
-        var password = $('#password').attr('value');
+        var ssid = $('#ssid').val();
+        var password = $('#password').val();
         var qrstr = 'WIFI:S:' + ssid + ';T:WPA;P:' + password + ';;';
 
         var target = document.getElementById("qrcode");
